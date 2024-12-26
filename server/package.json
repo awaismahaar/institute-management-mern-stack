@@ -4,7 +4,7 @@
   "description": "School Management System",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon server.js",
+    "start": "nodemon server.js",
     "client": "npm run dev --prefix ./client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
@@ -16,11 +16,11 @@
     "cloudinary": "^2.5.1",
     "concurrently": "^9.1.0",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.21.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
     "express-fileupload": "^1.5.1",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.8.1",
-    "nodemon": "^3.1.7"
+    "mongoose": "^8.9.2",
+    "nodemon": "^3.1.9"
   }
 }

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --primary : #126ce5;
+    --primary-second : #2112e5;
+    --secondary : #e5126c;
+    --secondary-second : #e52112;
+    --text : #0a213f;
+    --text-second : #030b15;
+    --bg : #d6e9ff;
+  /*   --header-height: 3rem; */
+    --nav-width: 68px;
+    --first-color: #4723D9;
+    --first-color-light: #AFA5D9;
+    --white-color: #F7F6FB;
+    --normal-font-size: 1rem;
+    --z-fixed: 100
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box
+}
+
+
+*{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    /* color: var(--text-second); */
+    
+}
+body{
+    /* background-color: var(--bg) !important; */
+    position: relative;
+    margin: var(--header-height) 0 0 0;
+    padding: 0 1rem;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    transition: .5s
+}
+/* .App{
+    width: 95% !important;
+    margin: auto !important;
+} */
+.signup-wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-container{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    background-color: var(--secondary);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: gray 0px 7px 29px 0px;
+}
+.left-side{
+    width: 50%;
+    height: 100%;  
+}
+.left-side img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right-side{
+    width: 50%;
+    height: 100%; 
+    background-color: white; 
+}
+.btn-bgColor{
+    background-color: var(--secondary) !important;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+.btn-bgColor:hover{
+    scale: 0.95;
+    color: white;
+    box-shadow: var(--secondary-second) 0px 7px 29px 0px;
+}
+.btn-bgColor:active{
+    color: var(--secondary) !important;
+}
+.eye-icon{
+        right: 17px;
+        bottom: 12px;
+        cursor: pointer;
+}
+.dashboard-main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard-main{
+   width: 100% !important;
+   height: 95vh !important;
+   background-color: white !important;
+   border-radius: 12px !important;
+   overflow: hidden !important;
+   display: flex !important;
+}
+.dashboard-left{
+    height: 100% !important;
+}
+.dashboard-right{
+    width: 100% !important;
+    height: 100% !important;
+    padding: 35px;
+    overflow-y: scroll;
+}
+.top-bar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 5% !important;
+    margin-right: -2px;
+}
+.top-bar img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
